@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600&display=swap');
+* { 
+    box-sizing: border-box; 
+}
+body { 
+       background-color: #f6f6f6;
+       margin: 0;
+}
+#wrapper{
+    display: flexbox;
+    font-family: 'Inconsolata', monospace;
+    margin: 0 auto;
+}
+header{
+    padding-left: 5%;
+    box-shadow: 1px 1px 10px;
+    width: 100%;
+    display: inline-block;
+}
+.headerTitle{
+    font-size: large;
+    width: 25%;
+    display: inline-block;
+}
+nav{
+    width: 50%;
+    display: inline-block;
+    justify-content:center;
+
+}
+nav li, ul{
+    display: inline-block;
+    padding: 0;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+nav a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+nav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+.headerContact{
+    width: 20%;
+    display: inline-flex;
+}
+.headerContact img{
+    margin: 0px 35px -10px 0px;
+
+}
+
+#headerLinkIn{
+    width: 46px;
+    height: 46px;
+}
+#headerGit{
+    width: 46px;
+    height: 46px;
+}
+#headerEmail{
+    width: 46px;
+    height: 46px;
+}
+#headerPhone{
+    width: 46px;
+    height: 46px;
+}
+/*ABOVE IS THE HEADER/NAV/CONTACT INFO*/
+/*BELOW IS MAIN*/
+main{
+    font-weight: 400;
+}
+#introduction{
+    display: inline-flex;
+    text-align: center;
+    justify-content:center;
+    background-color: #ffe2a3;
+    margin: 25px 15% 10px 15%;
+    box-shadow: 1px 2px 10px;
+}
+.introContent{
+    padding: 90px 40px 0 40px;
+}
+.introContent h3{
+    font-size: 200%;
+}
+#oneLiner{
+    font-size: 150%;
+}
+#detailedLiner{
+    font-size: 120%;
+}
+
+#introIMG{
+    height: 500px;
+    margin: 30px;
+
+}
+#bio{
+    background-color: #99C4C8;
+    box-shadow: 1px 2px 10px;
+    margin-top: 30px;
+    display: inline-flex;
+}
+#bio h2{
+    font-size: 200%;
+    margin-left: 20%;
+    margin-top: 150px;
+
+}
+.bioContents{
+    margin: 0px 20% 0px 10%;
+    padding: 20px 0px 20px 0px;
+    font-size: 120%;
+    font-weight: 500;
+}
+#skills{
+    display: inline-block;
+    width: 100%;
+}
+#skills h2{
+    width: 100%;
+    text-align: center;
+    font-size: 200%;
+    margin: 30px 0px -1px 0px;
+
+}
+.blocksContainer{
+    display: inline-flex;
+    margin: 0px 10% 0 10%;
+    padding: 20px;
+}
+.skillBlock{
+    background-color: #E5CB9F;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    width: 33%;
+    box-shadow: 1px 2px 5px;
+    font-size: 120%;
+
+}
+.skillBlock:hover{
+    box-shadow: 1px 2px 10px;
+    transition: 100ms;
+
+}
+.skillBlock h3{
+    font-size: 150%;
+}
+.skill-1{
+    margin-right: 20px;
+}
+.skill-3{
+    margin-left: 20px;
+}
+.skillBlock p{
+    padding-bottom: 10px;
+}
+#thinkingIMG{
+    width: 230px;
+}
+#javaIMG{
+    width: 230px;
+}
+#cyberSecIMG{
+    width: 230px;
+}
+#activities{
+    background-color: #99C4C8;
+    box-shadow: 1px 2px 10px;
+    margin-top: 30px;
+    display: inline-block;
+}
+#activities h1{
+    width: 100%;
+    font-size: 200%;
+    margin: 30px 0px -1px 0px;
+    text-align: center;
+}
+.activityContainer{
+    margin: 0px 10% 0px 10%;
+    display: inline-flex;
+    padding: 20px;
+}
+.actBlock{
+    background-color: #68A7AD;
+    margin: 10px;
+    width:25%;
+    padding: 15px;
+    box-shadow: 1px 2px 5px;
+    text-align: center;    
+}
+.actBlock h2{
+    font-size: 160%;
+}
+.actBlock p{
+    padding-bottom: 10px;
+    font-size: 120%;
+}
+.actBlock:hover{
+    box-shadow: 1px 2px 10px;
+    transition: 100ms;
+}
+
+#pcBuild{
+    height: 210px;
+}
+#Programing{
+    height: 210px;
+}
+#bouldering{
+    height: 210px;
+}
+#sysAdmin{
+    height: 210px;
+}
+#contact{
+    margin: 30px 20% 20px 20%;
+    background-color: #ffe2a3;
+    text-align: center;
+    padding-bottom: 20px;
+    box-shadow: 1px 2px 5px;
+
+}
+#contact:hover{
+    box-shadow: 1px 2px 10px;
+    transition: 100ms;
+}
+#contact h2{
+    padding-top: 20px;
+}
+
+#contact form{
+    display: block;
+    text-align: center;
+}
+#contact input{
+margin-bottom: 10px;
+padding: 5px;
+}
+
+#email_address{
+    width: 400px;
+}
+#FLname{
+    width: 400px;
+}
+#message{
+    width:400px;
+}
+#contact button{
+align-items: center;
+}
+
+/*ABOVE IS MAIN*/
+/*BELOW IS THE FOOTER CONTENT*/
+footer{
+    width: 100%;
+    justify-content:center;
+    position: absolute;
+    height: 350px;
+    background-color: rgb(214, 214, 214);
+    padding-top: 10px;
+    font-size: 100%;
+}
+.footerTop{
+    display: flex;
+    border-bottom: 1px solid black;
+    justify-content:center;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.top-col{
+    width: 25%;
+    margin: 5px 0px 5px 0px;
+    text-align: center;
+    padding: -5px 0 -5px 0;
+}
+.top-col h3{
+    margin: 5px;
+}
+.colT-3{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+.colT-2{
+    border-left: 1px solid black;
+}
+
+.footerTop a {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+.footerTop a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+.footerTop a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+.footerBottom{
+    display: flex;
+    justify-content:center;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-bottom: 1px solid black;
+    
+
+}
+.footerBottom img{
+    margin: 30px 40px 30px 40px;
+
+}
+#footerLinkIn{
+    width: 46px;
+    height: 46px;
+}
+#footerGit{
+    width: 46px;
+    height: 46px;
+}
+#footerEmail{
+    width: 46px;
+    height: 46px;
+}
+#footerPhone{
+    width: 46px;
+    height: 46px;
+}
+footer h2{
+    text-align: center;
+    background-color: rgb(214, 214, 214);
+
+}
+.toTop{
+    background-color: rgb(214, 214, 214);
+}
+.toTop a {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.10em;
+    display: inline-flex;
+    position: relative;
+    margin: 10px 0px 10px 49.5%;
+    bottom: 10px;
+  }
+.toTop a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+.toTop a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
